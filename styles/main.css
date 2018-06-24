@@ -52,7 +52,21 @@ body.landing {
 .column.fourth { width: 25%;}
 .column.flow-opposite { float: right;}
 }
+
 /* Large screens (1024px) */
 @media (min-width: 1024px) {
   html { font-size: 120%};
+}
+
+
+.clearfix::after {
+  content: ".";
+
+  visibility: hidden;
+
+  display: block;
+
+  height: 0;
+
+  clear: both;
 }
