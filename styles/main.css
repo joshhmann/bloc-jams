@@ -36,8 +36,7 @@ body.landing {
 
 /* Medium and small screens (640px) */
 @media (min-width: 640px) {
-  html { font-size: 112%};
-
+  html { font-size: 112%; }
 
 .column {
   float: left;
@@ -46,7 +45,7 @@ body.landing {
 }
 
 .column.full {width: 100%; }
-.column.two-thirds {width: 66.7;}
+.column.two-thirds {width: 66.7%;}
 .column.half {width: 50%;}
 .column.third {width: 33.3%;}
 .column.fourth { width: 25%;}
@@ -58,15 +57,10 @@ body.landing {
   html { font-size: 120%};
 }
 
-
 .clearfix::after {
   content: ".";
-
   visibility: hidden;
-
   display: block;
-
   height: 0;
-
   clear: both;
 }
