@@ -20,7 +20,7 @@ var albumMarconi = {
   artist: 'Guglielmo Marconi',
   label: 'EM',
   year: '1909',
-  albumArtUrl: 'assets/images/album_cover/02.png',
+  albumArtUrl: 'assets/images/album_covers/02.png',
   songs: [
     { title: 'Hello, Operator?', duration: '1:01' },
     { title: 'Ring, ring, ring', duration: '5:01' },
@@ -37,7 +37,7 @@ var albumAlex = {
   artist: 'Arctic Monkeys',
   label: 'Domino',
   year: '2009',
-  albumArtUrl: 'assets/images/album_cover/21.png',
+  albumArtUrl: 'assets/images/album_covers/22.png',
   songs: [
     { title: 'My Propeller', duration: '3:27' },
     { title: 'Crying Lightning', duration: '3:43' },
