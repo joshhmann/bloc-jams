@@ -104,7 +104,7 @@ var getSongItem = function(element) {
     case 'song-item-title':
     case 'song-item-duration':
         return findParentByClassName(element, 'album-view-song-item').querySelector('.song-item-number');
-    case 'song-item-number';
+    case 'song-item-number':
         return element;
         default:
           return;
@@ -117,7 +117,7 @@ var songRows = document.getElementsByClassName('album-view-song-item');
 
 // Album button templates
 var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
-var 
+var
 window.onload = function() {
   setCurrentAlbum(albumPicasso);
 
