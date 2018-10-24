@@ -110,7 +110,7 @@ var nextSong = function() {
   updatePlayerBarSong();
 
   var $nextSongNumberCell = $('.song-item-number[data-song-number="' + currentlyPlayingSongNumber + '"]');
-  var $lastSongNumberCell = $('.song-item-number[data-song-number"' + lastSongNumber + '"]');
+  var $lastSongNumberCell = $('.song-item-number[data-song-number="' + lastSongNumber + '"]');
 
   $nextSongNumberCell.html(pauseButtonTemplate);
   $lastSongNumberCell.html(lastSongNumber);
