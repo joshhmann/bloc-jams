@@ -110,10 +110,9 @@ var nextSong = function() {
   if (currentSongIndex >= currentAlbum.songs.length) {
     currentSongIndex = 0;
   }
-
   var lastSongNumber = currentlyPlayingSongNumber;
-
-  setSong(songNumber);
+  currentlyPlayingSongNumber = currentSongIndex + 1;
+  currentSongFromAlbum = currentAlbum.songs[currentSongIndex];
 
   updatePlayerBarSong();
 
@@ -127,15 +126,14 @@ var nextSong = function() {
 var previousSong = function() {
   var currentSongIndex = trackIndex(currentAlbum, currentSongFromAlbum);
   currentSongIndex--;
-
   if (currentSongIndex < 0) {
     currentSongIndex = currentAlbum.songs.length - 1;
   }
 
   var lastSongNumber = currentlyPlayingSongNumber;
 
-  setSong(songNumber);
-
+  currentlyPlayingSongNumber = currentSongIndex + 1;
+  currentSongFromAlbum = currentAlbum.songs[currentSongIndex];
   updatePlayerBarSong();
 
   $('.main-controls .play-pause').html(playerBarPauseButton);
