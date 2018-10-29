@@ -140,7 +140,6 @@ var updatePlayerBarSong = function() {
     $('.currently-playing .artist-name').text(currentAlbum.artist);
     $('.currently-playing .artist-song-mobile').text(currentSongFromAlbum.title + " - " + currentAlbum.artist);
     $('.main-controls .play-pause').html(playerBarPauseButton);
-    setTotalTimeInPlayerBar();
 
 };
 
@@ -210,7 +209,7 @@ var updateSeekBarWhileSongPlays = function() {
       var $seekBar = $('.seek-control .seek-bar');
 
       updateSeekPercentage($seekBar, seekBarFillRatio);
-      setcurrentTimeInPlayerBar();
+      setCurrentTimeInPlayerBar(this.getTime());
     });
   }
 };
@@ -265,7 +264,7 @@ var setupSeekBars = function() {
   });
 };
 
-var setcurrentTimeInPlayerBar = function(currentTime) {
+var setCurrentTimeInPlayerBar = function(currentTime) {
     $('.current-time').text(filterTimeCode(currentTime));
 };
 
@@ -279,7 +278,7 @@ var filterTimeCode = function(timeInSeconds) {
   var getSeconds = Math.floor(parsedSeconds % 60);
   getSeconds = getSeconds < 10 ? "0" + getSeconds : getSeconds;
   return getMinutes + ":" +getSeconds;
-  setTotalTimeInPlayerBar();
+
 }
 // Album button templates
 
